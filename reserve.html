@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="reserve.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="menu.html">Menu</a>
+        <a href="">About Us</a>
+    </div>
+    <div class="cover">
+        <h1>Reserve</h1>
+        <div class="center">
+            <form method="get">
+                <div class="orange">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="green">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="orange">
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div class="green">
+                    <label for="num">Number of people</label>
+                    <input type="text" name="num" id="num" placeholder="number of people" pattern="[0-9]+">
+                </div>
+                
+                    <button type="submit" id="book">Book</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
